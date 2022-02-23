@@ -3,4 +3,57 @@
 body {
     // background-color: $backgroundColor;
     font-family: 'Montserrat', sans-serif;
+    .button-52 {
+        border: 1px solid #545454;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-52:after {
+        content: "";
+        background-color: #f26283;
+        width: 100%;
+        border-radius: 4px;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+    }
+
+    .button-52:hover:after {
+        top: 0px;
+        left: 0px;
+    }
+
+
+    // @media (min-width: 768px) {
+    //     .button-52 {
+    //         padding: 13px 50px 13px;
+    //     }
+    // }
+    .nav-cus{
+        .nav-link.active{
+            color:#f26283;
+            border-color:#f26283;
+            >div{
+                color:white;
+                background-color:#f26283;
+            }
+        }
+        
+    
+    }
+    .title-section{
+        .cgreen{
+            z-index: -1;
+            top: -10px;
+            left: 30px;
+        }
+    }
 }
